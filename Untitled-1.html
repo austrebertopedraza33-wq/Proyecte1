@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo Canino | Razas de Perros</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">🐾 Mundo Canino</div>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#razas">Razas</a>
+        <a href="#acerca">Acerca de</a>
+    </nav>
+</header>
+
+<section class="hero" id="inicio">
+    <div class="hero-contenido">
+        <p class="etiqueta">🐶 ENCICLOPEDIA CANINA</p>
+        <h1>Descubre el increíble mundo de los perros</h1>
+        <p>
+            Conoce diferentes razas, sus características, personalidad,
+            cuidados y mucho más.
+        </p>
+
+        <a href="#razas" class="boton">Explorar razas ↓</a>
+    </div>
+
+    <div class="hero-perro">🐕</div>
+</section>
+
+<main>
+
+    <section class="razas" id="razas">
+
+        <div class="titulo-seccion">
+            <p>CONOCE A TU COMPAÑERO IDEAL</p>
+            <h2>Explora las razas</h2>
+            <span>Busca y descubre información sobre 20 razas de perros.</span>
+        </div>
+
+        <div class="controles">
+
+            <input
+                type="text"
+                id="buscador"
+                placeholder="🔍 Buscar una raza..."
+            >
+
+            <select id="filtroTamano">
+                <option value="todos">Todos los tamaños</option>
+                <option value="Pequeño">Pequeño</option>
+                <option value="Mediano">Mediano</option>
+                <option value="Grande">Grande</option>
+            </select>
+
+        </div>
+
+        <p id="contador"></p>
+
+        <div class="contenedor-razas" id="contenedorRazas"></div>
+
+    </section>
+
+
+    <section class="acerca" id="acerca">
+
+        <div>
+            <p class="etiqueta">SOBRE EL PROYECTO</p>
+            <h2>🐾 Mundo Canino</h2>
+
+            <p>
+                Mundo Canino es una página informativa creada para aprender
+                sobre algunas de las razas de perros más conocidas del mundo.
+            </p>
+
+            <p>
+                Aquí puedes conocer su origen, personalidad, tamaño,
+                esperanza de vida, necesidades de ejercicio y cuidados.
+            </p>
+        </div>
+
+        <div class="estadisticas">
+
+            <div>
+                <strong>20</strong>
+                <span>Razas</span>
+            </div>
+
+            <div>
+                <strong>10+</strong>
+                <span>Países</span>
+            </div>
+
+            <div>
+                <strong>∞</strong>
+                <span>Amor perruno</span>
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+    <h3>🐾 Mundo Canino</h3>
+    <p>Proyecto informativo sobre razas de perros.</p>
+    <p>Hecho con HTML, CSS y JavaScript 🐶</p>
+</footer>
+
+
+<!-- VENTANA DE INFORMACIÓN -->
+
+<div class="modal" id="modal">
+
+    <div class="modal-contenido">
+
+        <button id="cerrarModal">✕</button>
+
+        <div id="informacionModal"></div>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
